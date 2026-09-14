@@ -1,0 +1,18 @@
+Please implement this screen in the Material 3 Expressive design language.
+Target a portrait phone screen (412×892dp), light mode only.
+Build it for Android, as a native app.
+The layout below is a rough sketch that conveys intent, not a finished spec...
+
+Colors:
+primary #6750A4 / onPrimary #FFFFFF / primaryContainer #EADDFF
+
+Layout:
+- Top app bar titled "Title"
+- Connected button group: Favorite (filled), Share (tonal)
+- Card: غسيل خارجي 30 ريال / غسيل سريع خلال 20 دقيقة
+- List: Inbox, Starred, Archive
+- Card: غسيل داخلي وخارجي 60 ريال (تلميع + تعطير مجاني)
+- Card: تلميع كامل - 120 ريال
+- FAB edit + Navigation bar Home/Search/Saved/Settings
+
+Component styles: M3 Expressive defaults, pill buttons, 20dp cards
