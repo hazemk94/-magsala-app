@@ -10,6 +10,12 @@ jobs:
           distribution: temurin
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.5'
+      - name: Fix corrupted wrapper
+        run: |
+          rm -f gradle/wrapper/gradle-wrapper.jar
+          gradle wrapper --gradle-version 8.5
       - name: Make gradlew executable
         run: chmod +x gradlew
       - name: Build APK
