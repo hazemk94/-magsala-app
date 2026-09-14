@@ -14,7 +14,7 @@ jobs:
           rm -f gradle/wrapper/gradle-wrapper.jar
           curl -L -o gradle/wrapper/gradle-wrapper.jar https://raw.githubusercontent.com/gradle/gradle/v8.5.0/gradle/wrapper/gradle-wrapper.jar
       - name: Make gradlew executable
-        run:  chmod +x gradlew
+        run: chmod +x gradlew
       - name: Build Debug APK
         run: ./gradlew assembleDebug
       - name: Upload APK
